@@ -4,6 +4,7 @@ const DEFAULT_LANGUAGE = 'english';
 const DEFAULT_LANGUAGE_CODE = 'en-US';
 
 define('NOW', time());
+define('MAX_PRECISION', 1e14);
 define('DEFAULT_DATE', mktime(0, 0, 0, 1, 1, 2010));
 define('DEFAULT_DATETIME', mktime(0, 0, 0, 1, 1, 2010));
 
@@ -57,6 +58,7 @@ function get_languages()
 		'ar-LB:arabic' => 'Arabic (Lebanon)',
 		'az-AZ:azerbaijani' => 'Azerbaijani (Azerbaijan)',
 		'bg:bulgarian' => 'Bulgarian',
+		'bs-BA:bosnian' => 'Bosnian',
 		'cs:czech' => 'Czech',
 		'da:danish' => 'Danish',
 		'de:german' => 'German (Germany)',
@@ -88,6 +90,7 @@ function get_languages()
 		'th:thai' => 'Thai',
 		'tl-PH:talong' => 'Tagalog (Philippines)',
 		'tr:turkish' => 'Turkish',
+		'uk-UA:ukrainian' => 'Ukrainian',
 		'ur-PK:urdu' => 'Urdu (Islamic Republic of Pakistan)',
 		'vi:vietnamese' => 'Vietnamese',
 		'zh-Hans:simplified-chinese' => 'Chinese Simplified Script',
@@ -422,6 +425,16 @@ function parse_decimals($number, $decimals = NULL)
 	if(empty($number))
 	{
 		return $number;
+	}
+
+	if ($number > MAX_PRECISION)
+	{
+		return FALSE;
+	}
+
+	if ($number > 1.e14)
+	{
+		return FALSE;
 	}
 
 	$config = get_instance()->config;

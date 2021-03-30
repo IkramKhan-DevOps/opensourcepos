@@ -1,4 +1,5 @@
-<?php
+<?php 
+
 $lang["common_address_1"] = "Adres 1";
 $lang["common_address_2"] = "Adres 2";
 $lang["common_city"] = "Stad";
@@ -6,7 +7,7 @@ $lang["common_close"] = "Sluit";
 $lang["common_comments"] = "Commentaar";
 $lang["common_common"] = "algemeen";
 $lang["common_confirm_search"] = "U hebt een of meerdere rijen geselecteerd, deze zullen niet langer geselecteerd zijn na de zoekopdracht. Bent u zeker dat u wil verdergaan?";
-$lang["common_copryrights"] = "© 2010 - %1";
+$lang["common_copyrights"] = "© 2010 - %1";
 $lang["common_correct_errors"] = "Los aub de aangegeven fouten op voor u bewaart";
 $lang["common_country"] = "Land";
 $lang["common_date"] = "Datum";
@@ -26,6 +27,7 @@ $lang["common_first_page"] = "Eerste";
 $lang["common_gender"] = "Geslacht";
 $lang["common_gender_female"] = "V";
 $lang["common_gender_male"] = "M";
+$lang["common_gender_undefined"] = "X";
 $lang["common_id"] = "Id";
 $lang["common_import"] = "Import";
 $lang["common_import_change_file"] = "Wijzig";
@@ -39,11 +41,12 @@ $lang["common_last_name_required"] = "De achternaam moet ingevuld worden.";
 $lang["common_last_page"] = "Laatste";
 $lang["common_learn_about_project"] = "om de laatste informatie te verkrijgen over het project.";
 $lang["common_list_of"] = "Lijst van";
-$lang["common_logout"] = "Logout";
+$lang["common_logout"] = "UItloggen";
 $lang["common_migration_needed"] = "Een database migratie naar %1 zal starten na de login.";
 $lang["common_new"] = "Nieuw";
+$lang["common_no"] = "Neen";
 $lang["common_no_persons_to_display"] = "Er werden geen personen gevonden.";
-$lang["common_none_selected_text"] = "Geen selectie.";
+$lang["common_none_selected_text"] = "Geen selectie";
 $lang["common_or"] = "Of";
 $lang["common_phone_number"] = "Telefoon";
 $lang["common_phone_number_required"] = "";
@@ -66,5 +69,6 @@ $lang["common_view_recent_sales"] = "Bekijk recente verkoop";
 $lang["common_website"] = "website";
 $lang["common_welcome"] = "Welkom";
 $lang["common_welcome_message"] = "Welkom in OSPOS, klik beneden een module aan om te beginnen.";
+$lang["common_yes"] = "Ja";
 $lang["common_you_are_using_ospos"] = "U gebruikt Open Source Point Of Sale Version";
 $lang["common_zip"] = "Postcode";

@@ -1,4 +1,5 @@
-<?php
+<?php 
+
 $lang["item_kits_add_item"] = "Ürün Ekle";
 $lang["item_kits_all"] = "Hepsi";
 $lang["item_kits_cannot_be_deleted"] = "Ürün seti silinemedi.";
@@ -13,6 +14,9 @@ $lang["item_kits_error_adding_updating"] = "Ürün seti ekleme/güncelleme hatas
 $lang["item_kits_find_kit_item"] = "Ürün Seti";
 $lang["item_kits_info"] = "Ürün Seti Bilgisi";
 $lang["item_kits_item"] = "Ürün";
+$lang["item_kits_item_kit_number"] = "";
+$lang["item_kits_item_kit_number_duplicate"] = "";
+$lang["item_kits_item_number"] = "";
 $lang["item_kits_items"] = "Ürünler";
 $lang["item_kits_kit"] = "Set Kimliği";
 $lang["item_kits_kit_and_components"] = "Kit ve Bileşenler";

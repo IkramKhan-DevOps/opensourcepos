@@ -323,7 +323,7 @@ class Receiving_lib
 
 		foreach($this->CI->Receiving->get_receiving_items($receiving_id)->result() as $row)
 		{
-			$this->add_item($row->item_id, -$row->quantity_purchased, $row->item_location, $row->discount, $row->discount_type, $row->item_unit_price, $row->description, $row->serialnumber, $receiving_id, $row->receiving_quantity, TRUE);
+			$this->add_item($row->item_id, -$row->quantity_purchased, $row->item_location, $row->discount, $row->discount_type, $row->item_unit_price, $row->description, $row->serialnumber, $row->receiving_quantity, $receiving_id, TRUE);
 		}
 
 		$this->set_supplier($this->CI->Receiving->get_supplier($receiving_id)->person_id);
@@ -333,7 +333,7 @@ class Receiving_lib
 	{
 		//KIT #
 		$pieces = explode(' ',$external_item_kit_id);
-		$item_kit_id = $pieces[1];
+		$item_kit_id = count($pieces) > 1 ? $pieces[1] : $external_item_kit_id;
 		
 		foreach($this->CI->Item_kit_items->get_info($item_kit_id) as $item_kit_item)
 		{

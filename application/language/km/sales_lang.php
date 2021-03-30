@@ -1,6 +1,6 @@
 <?php 
 
-$lang["customers_available_points"] = "";
+$lang["customers_available_points"] = "ពិន្ទុដែលប្រើប្រាស់បាន";
 $lang["rewards_package"] = "";
 $lang["rewards_remaining_balance"] = "";
 $lang["sales_account_number"] = "";
@@ -25,6 +25,7 @@ $lang["sales_confirm_delete"] = "";
 $lang["sales_confirm_restore"] = "";
 $lang["sales_credit"] = "";
 $lang["sales_credit_deposit"] = "";
+$lang["sales_credit_filter"] = "";
 $lang["sales_customer"] = "";
 $lang["sales_customer_address"] = "";
 $lang["sales_customer_discount"] = "";
